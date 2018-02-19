@@ -1,0 +1,42 @@
+
+/* Usando Fallbacks para texto con imágenes de fondo */
+
+/*
+    Muchas veces cuando usamos texto con imágenes de fondo
+    no contemplamos que el color de dicho texto puede
+    desaparecer con el fondo del sitio web o de otros
+    contenedores.
+*/
+
+.wrapper {
+    background-image: url(image.jpg);
+    background-size: cover;
+    color: white;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+/*
+    Esto puede ser causado por distintas circunstancias, el
+    problema es que el usuario puede que jamás se percate
+    de que hay texto en esa parte del sitio web.
+*/
+
+/*
+    La solución es usar un color que funcionara como sustituto
+    de la imagen si algo llega a pasar:
+*/
+
+.wrapper {
+    background: #000 url(image-404.jpg);
+    color: white;
+    width: 500px;
+    height: 500px;
+}
+
+
+
+
+
+
