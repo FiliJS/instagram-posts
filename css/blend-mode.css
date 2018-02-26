@@ -1,0 +1,35 @@
+/* background-blend-mode */
+
+/*
+    background-blend-mode nos permite 
+    mezclar una imagen con algún color.
+*/
+
+img {
+    background-image: url(image.jpg); 
+    background-color: #0C94F5;
+    background-blend-mode: multiply;
+}
+
+/*
+    Hay distintos valores para dicha 
+    propiedad, todos con diferentes
+    resultados.
+*/
+
+img {
+    background-image: url(image.jpg); 
+    background-color: #0C94F5;  
+    background-blend-mode: difference;
+}
+
+/*
+    Incluso puedes mezclar dos
+    imágenes o usar degradados.
+*/
+
+img {
+    background: url(image-1.jpg), url(image-2.jpg);
+    background-color: linear-gradient(to right, #6DC42A, #ED3A7E);
+    background-blend-mode: difference;
+}
