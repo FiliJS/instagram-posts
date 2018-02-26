@@ -29,7 +29,15 @@ img {
 */
 
 img {
-    background: url(image-1.jpg), url(image-2.jpg);
-    background-color: linear-gradient(to right, #6DC42A, #ED3A7E);
+    background: url(image-1.jpg), 
+                url(image-2.jpg);
+    background-color: #0C94F5;
+    background-blend-mode: difference;
+}
+
+img {
+    background-image: 
+      linear-gradient(to right,#6DC42A,#ED3A7E),
+      url(image.jpg);  
     background-blend-mode: difference;
 }
